@@ -1,12 +1,11 @@
-
 let handler = m => m; 
  handler.all = async function (m) { 
 
    let chat = global.db.data.chats[m.chat]; 
    let responses; 
-   if (/^ايتاشي$/i.test(m.text)) { 
+   if (/^روبين$/i.test(m.text)) { 
      responses = [ 
- '*موجود ف خدمتك*😈🩸'  
+ '*موجوده*✨️❤️‍🔥'  
      ];
     
        }else if (/^اوامر$/i.test(m.text)) { 
@@ -18,7 +17,32 @@ let handler = m => m;
      responses = [ 
        '*اكتب .المهام*',  
      ];  
-      
+                     
+        }else if (/^بوت$/i.test(m.text)) { 
+     responses = [ 
+       '*موجوده بس اسمي روبين يا عاق*',  
+     ];  
+                 
+        }else if (/^المطور$/i.test(m.text)) { 
+     responses = [ 
+       '*ديكو*',  
+     ];  
+                  
+        }else if (/^ديكو$/i.test(m.text)) { 
+     responses = [ 
+       '*عمك + مطوري انا*',  
+     ];  
+                    
+        }else if (/^. بوت$/i.test(m.text)) { 
+     responses = [ 
+       '*اسمي روبين يا عاق*😮‍💨',  
+     ];  
+                     
+        }else if (/^. بوت$/i.test(m.text)) { 
+     responses = [ 
+       'اكتب . روبين يا عاق',  
+     ];  
+                  
    }
    if (responses) { 
      let randomIndex = Math.floor(Math.random() * responses.length); 
