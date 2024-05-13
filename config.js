@@ -22,8 +22,8 @@ global.APIKeys = { // Apikey : 42x5rO7o \\
 global.ownername = 'Akira'
 global.botname = 'ايتاشي بــوت'
 global.premium = 'false'
-global.packname = 'روبين بــوت'
-global.author = '201279800415 >> ديكو 
+global.packname = 'ايتاشي بــوت'
+global.author = '201020639057 >> اكـــيــــرا'
 
 
 global.wait = '*[■■■■■■■■■□] 90%*'
