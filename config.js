@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['ديكو', '201279800415', true],
+  ['201276848689', '201276848689', true],
 ] //Number of owners
 
 global.mods = ['201279800415', '201276848689'] 
@@ -22,8 +22,8 @@ global.APIKeys = { // Apikey : 42x5rO7o \\
 global.ownername = 'ديكو'
 global.botname = 'روبين'
 global.premium = 'false'
-global.packname = 'روبن بــوت'
-global.author = '201279800415 >> ديكو'
+global.packname = 'روبين بــوت'
+global.author = '201276848689 >> ديكو'
 
 
 global.wait = '*[■■■■■■■■■□] 90%'
