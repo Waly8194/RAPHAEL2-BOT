@@ -17,7 +17,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
       name = conn.getName(who);
     }
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://api.waifu.pics/sfw/siks);
+    let apislap = await fetch(`https://api.waifu.pics/sfw/xnxxn);
     let jkis = await apislap.json();
     let { url } = jkis;
     let stiker = await sticker(null, url, `${name2} n\Slap `, null);
