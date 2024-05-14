@@ -20,7 +20,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
     await conn.sendMessage(m.chat, { react: { text: '💎', key: m.key } })
-let videoUrl = 'https://telegra.ph/file/bf2b85ed249c3dd806bbf.mp4';
+let videoUrl = 'https://telegra.ph/file/3319184b57355608d96c2.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
   const {money, joincount} = global.db.data.users[m.sender];
