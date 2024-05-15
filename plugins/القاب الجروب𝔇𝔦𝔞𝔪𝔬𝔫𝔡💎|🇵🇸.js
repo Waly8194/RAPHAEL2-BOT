@@ -187,7 +187,7 @@ conn.sendMessage(m.chat, {
 }; 
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = ['B5'] 
+handler.command = ['سي'] 
 
 export default handler
 function clockString(ms) {
