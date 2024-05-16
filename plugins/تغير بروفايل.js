@@ -13,6 +13,6 @@ function changeProfilePicture(username, newPicture) {
 }
 
 // استخدام الدالة لتغيير الصورة في البروفايل
-const requestedUsername = prompt("الرجاء إدخال اسم المستخدم:");
-const requestedPicture = prompt("الرجاء إدخال الصورة الجديدة:");
+const requestedUsername = prompt("ديكو");
+const requestedPicture = prompt("تغير_بروفايل");
 changeProfilePicture(requestedUsername, requestedPicture);
