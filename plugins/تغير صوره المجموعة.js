@@ -1,4 +1,4 @@
-//كود تغير صورة الجروب
+
 
 let handler = async (m, { conn, usedPrefix, command }) => {
 
