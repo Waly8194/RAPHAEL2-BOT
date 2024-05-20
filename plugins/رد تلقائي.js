@@ -3,7 +3,7 @@ let handler = m => m;
 
    let chat = global.db.data.chats[m.chat]; 
    let responses; 
-   if (/^روبين$/i.test(m.text)) { 
+   if (/^نيزوكو$/i.test(m.text)) { 
      responses = [ 
  '*موجوده*✨️❤️‍🔥'  
      ];
