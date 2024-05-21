@@ -23,7 +23,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
     // إضافة الأمر الجديد هنا
     await conn.sendMessage(m.chat, { react: { text: '📁', key: m.key } })
 
-    let videoUrl = 'https://telegra.ph/file/3873b3362f6c20d078444.mp4';
+    let videoUrl = 'https://telegra.ph/file/a3bf3652b21d59e9b4419.mp4';
     let vn = './media/menu.mp3';
     const user = global.db.data.users[m.sender];
     const {money, joincount} = global.db.data.users[m.sender];
