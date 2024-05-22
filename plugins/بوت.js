@@ -20,7 +20,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
     await conn.sendMessage(m.chat, { react: { text: '🌋', key: m.key } })
-let videoUrl = 'https://telegra.ph/file/ce2ba89336d9c110a737f.mp4;
+let videoUrl = 'https://telegra.ph/file/ce2ba89336d9c110a737f.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
   const {money, joincount} = global.db.data.users[m.sender];
@@ -37,7 +37,7 @@ let readMore = more.repeat(900)
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
 *┃❐━═━═✦◈❨🌋❩◈✦═━═━❐┃*
-*❖┃اهلا بك ف بوت نيزوكو*
+*❖┃اهلا بك ف بوت روبين*
 
 *❐↞┇اذا كان امر لا يعمل ابلغ المطور عن طريق امر .بلاغ*
 *❂ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*
