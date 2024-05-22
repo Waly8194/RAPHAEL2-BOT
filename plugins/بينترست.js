@@ -7,14 +7,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
   let nn = "https://example.com/image-details"; // تعريف المتغير nn بقيمة URL
   text = text.endsWith('SMH') ? text.replace('SMH', '') : text 
-  if (!text) throw '*[❗مساعده❗]*\n*•┃❖ابحث على اي صوره ا. شخصيه ترديها*\n*•┃❖مثال افتار اكيرا افتار نيزوكو*'
-  await conn.reply(m.chat, '*انتضر جار تحميل الافتار*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇', body: `𝑇𝐸𝑁𝐷𝛩𝑈, 𝐴𝐾𝐼𝑅𝐴⁵`, sourceUrl: nn,thumbnail: '' }}})
+  if (!text) throw '*[❗مساعده❗]*\n*•┃❖ابحث على اي صوره ا. شخصيه ترديها*\n*•┃❖مثال افتار ديكو افتار نيزوكو*'
+  await conn.reply(m.chat, '*انتضر جار تحميل الافتار*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝑁𝐸𝑍𝑈𝐾𝛩', body: `𝑇𝐸𝑁𝐷𝛩𝑈, 𝐷𝐸𝐾𝑈⁵`, sourceUrl: nn,thumbnail: '' }}})
   let res = await pinterest(text)
   // if (!res) throw res
   let mime = await lookup(res)
   text.match(URL_REGEX) ?
     await conn.sendMessage(m.chat, { [mime.split('/')[0]]: { url: res }, caption: `Succes Download: ${await shortUrl(res)}` }, { quoted: m }) :
-  await conn.sendFile(m.chat, res, 'pinterest.jpg', `*•┃❖نتيجه بحث ${text.capitalize()}*\n*•┃❖ا〘 ~𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇~ 〙*`, fkontak, m)
+  await conn.sendFile(m.chat, res, 'pinterest.jpg', `*•┃❖نتيجه بحث ${text.capitalize()}*\n*┃❐━═━═✦◈❨ 𝑁𝐸𝑍𝑈𝐾𝛩 ❩◈✦═━═━❐┃*`, fkontak, m)
 }
 handler.help = handler.alias = ['pinterest']
 handler.tags = ['downloader', 'image']
