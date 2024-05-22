@@ -36,8 +36,6 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
-
-
 *┃❐━═━═✦◈❨🌋❩◈✦═━═━❐┃*
 *⏎┃🌋⃝•┃اهلا بك يا${taguser}*
 *⏎┃🌋⃝•┃وقت التشغيل《${uptime}》*
@@ -53,7 +51,7 @@ let str = `
 *〚ا https://chat.whatsapp.com/FzkRvO8YrNRKgtjV7eBgzb 〛*
 *✧║ا【 𝑁𝐸𝑍𝑈𝐾𝛩  𝐵𝛩𝑇 】*
 *┃❐━═━═✦◈❨🌋❩◈✦═━═━❐┃*
-‬`.trim();
+‬
 ‬`.trim();
 
 conn.sendMessage(m.chat, {
@@ -89,6 +87,4 @@ function clockString(ms) {
         res = "مساء الخير 🌙"
       }
       return res
-      }
-
-
+    }
