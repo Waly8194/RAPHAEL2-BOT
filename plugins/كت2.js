@@ -18,7 +18,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ⷮ ${json.question}
 ❐↞┇الـوقـت⏳↞ ${(timeout / 1000).toFixed(2)}┇
 ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
-*❖━━━━━━[ 𝑁𝐸𝑍𝑈𝐾𝛩-𝐵𝛩𝑇 ]━━━━━❖*
+*┃❐━═✦◈❨ 𝑁𝐸𝑍𝑈𝐾𝛩 ❩◈✦═━❐┃*
 `.trim();
     conn.tekateki[id] = [
        await conn.reply(m.chat, caption, m),
