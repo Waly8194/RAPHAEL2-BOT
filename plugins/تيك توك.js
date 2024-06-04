@@ -1,4 +1,3 @@
-//مقدمه من قناه Zoro Codes ' https://whatsapp.com/channel/0029VaYMyqu4CrfgGRLXfv3c '
 import fetch from 'node-fetch';
 import fs from 'fs';
 
