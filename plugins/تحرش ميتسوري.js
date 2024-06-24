@@ -26,7 +26,24 @@ const dir = [
 'https://telegra.ph/file/62dd971bfe424dad14f03.jpg',
 'https://telegra.ph/file/0cda9116276fba3cfb1f3.jpg',
 'https://telegra.ph/file/08118dc844fa00bca1c48.jpg',
-
+'https://telegra.ph/file/db1085a256f920bc01c09.jpg',
+'https://telegra.ph/file/3636df6b63f6d1735501b.jpg',
+'https://telegra.ph/file/3e37a769579013bc5a119.jpg',
+'https://telegra.ph/file/d341f832bcb968be997d7.jpg',
+'https://telegra.ph/file/580cec573ee3710400267.jpg',
+'https://telegra.ph/file/bed6aaa71d3fe5006e32c.jpg',
+'https://telegra.ph/file/2b6c3944ce65e997f0d1c.jpg', 
+'https://telegra.ph/file/2b6c3944ce65e997f0d1c.jpg',
+'https://telegra.ph/file/0794f32c15321ce8af19c.jpg',
+'https://telegra.ph/file/ad9b0f59b3f1b6844ab1a.jpg',
+'https://telegra.ph/file/8be79ea3069a273cdc5af.jpg',
+'https://telegra.ph/file/5315574e7b3a6cede5b54.jpg',
+'https://telegra.ph/file/a0f2f62332f5a92d9890a.jpg',
+'https://telegra.ph/file/0a20be765fb574868f338.jpg',
+'https://telegra.ph/file/6b0e31ce140ae04584868.jpg',
+                         
+    
+                      
 ];
 let handler = async (m, { conn }) => {
   conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dado.webp', '', m)
