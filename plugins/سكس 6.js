@@ -17,7 +17,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
       name = conn.getName(who);
     }
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://api.waifu.pics/sfw/+18);
+    let apislap = await fetch(`https://api.waifu.pics/sfw/Sex);
     let jkis = await apislap.json();
     let { url } = jkis;
     let stiker = await sticker(null, url, `${name2} n\Slap `, null);
@@ -28,5 +28,5 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 };
 handler.help = ["slap"];
 handler.tags = ["General"];
-handler.command = /^(siks6|سكس6)$/i;
+handler.command = /^(siks6|سكس)$/i;
 export default handler;
